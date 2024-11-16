@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:title" content="काकडे हर्षदा विद्याधर - डेमो मतदान यंत्र"/>
+<meta property="og:description" content="222 शेवगाव पाथर्डी विधानसभा सार्वत्रिक निवडणूक 2024"/>
+<meta property="og:url" content="https://chandrashekharghule.pollchit.in/"/>
+<meta property="og:image"content="https://drive.google.com/thumbnail?id=1O_dIqLHwaaRazNR2s42cqPzP0v4ASWUp&sz=w1000"/>
+    <title>काकडे हर्षदा विद्याधर - डेमो मतदान यंत्र</title>
+     <link rel="shortcut icon" type="image/x-icon" href="https://drive.google.com/thumbnail?id=1YkMtemr0WNvttdNmGqK8E8Rsmi3A-c_h&sz=w1000">
+   
+
+<link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<style>
+
+  #rcorners1 {
+  border-radius: 8px;
+  background: #393186;
+  
+  width: 100%;
+  height: 50px;  
+}
+
+        .button {
+  text-align: center;
+  height: 65px;
+  width: 20%;
+  line-height: 65px;
+  cursor: pointer;
+  font-size: 22px;
+  text-transform: uppercase;
+  /*letter-spacing: 4px;*/
+  color: #F0F0F0;
+  border-radius: 30px;
+
+  /*4F0044*/
+  border-bottom: 4px solid #4D43B2;
+  box-shadow: 6px 6px 6px #999;
+  user-select: none;
+  background: #393186;
+  transition: background 0.05s linear;
+  transition: all .05s linear;
+
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.button:active {
+  box-shadow: 2px 2px 2px #777;
+  border-bottom: 1px solid #FFB909;
+  transform: translateY(3px);
+}
+
+ .buttonCorrect {
+  text-align: center;
+  height: 65px;
+  width: 20%;
+  line-height: 65px;
+  cursor: pointer;
+  font-size: 22px;
+  text-transform: uppercase;
+  /*letter-spacing: 4px;*/
+  color: #F0F0F0;
+  border-radius: 30px;
+
+  /*4F0044*/
+  border-bottom: 4px solid #4D43B2;
+  box-shadow: 6px 6px 6px #999;
+  user-select: none;
+  background: #393186;
+  transition: background 0.05s linear;
+  transition: all .05s linear;
+
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.buttonCorrect:active {
+  box-shadow: 2px 2px 2px #777;
+  border-bottom: 1px solid #FFB909;
+  transform: translateY(3px);
+}
+
+ .buttonIntro {
+  text-align: center;
+  height: 65px;
+  width: 20%;
+  line-height: 65px;
+  cursor: pointer;
+  font-size: 22px;
+  text-transform: uppercase;
+  /*letter-spacing: 4px;*/
+  color: #F0F0F0;
+  border-radius: 30px;
+
+  /*4F0044*/
+  border-bottom: 4px solid #4D43B2;
+  box-shadow: 6px 6px 6px #999;
+  user-select: none;
+  background: #393186;
+  transition: background 0.05s linear;
+  transition: all .05s linear;
+
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+
+
+.buttonIntro1 {
+  text-align: center;
+  height: 165px;
+  width: 20%;
+  line-height: 65px;
+  cursor: pointer;
+  font-size: 22px;
+  text-transform: uppercase;
+  /*letter-spacing: 4px;*/
+  color: #F0F0F0;
+  border-radius: 30px;
+
+  /*4F0044*/
+  border-bottom: 4px solid #4D43B2;
+  box-shadow: 6px 6px 6px #999;
+  user-select: none;
+  background: #393186;
+  transition: background 0.05s linear;
+  transition: all .05s linear;
+
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+.buttonIntro:active {
+  box-shadow: 2px 2px 2px #777;
+  border-bottom: 1px solid #FFB909;
+  transform: translateY(3px);
+}
+
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ overflow: scroll;
+}
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  
+  padding: 0;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #3c7dcf;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+ 
+
+.modal-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  line-height: 30px;
+}
+
+.modal-body {
+  position: absolute;
+  top: 100px;
+  /*bottom: 60px;*/
+  width: 100%;
+  font-weight: 300;
+  overflow: auto;
+}
+
+.modal-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  padding: 10px;
+  background: #f1f3f5;
+}
+
+
+.modal {
+  position: fixed;
+  top: 15%;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  overflow: scroll;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.modal-dialog {
+  position: fixed;
+  margin: 0!important;
+  width: 100%;
+  height: 80%;
+  padding: 0!important;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 20%;
+  left: 0;
+  border: 2px solid #3c7dcf;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 115px;
+  padding: 10px;
+  background: #0d6efd;
+  border: 0;
+}
+
+.modal-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  line-height: 30px;
+}
+
+ 
+.modal-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  padding: 10px;
+  background: #f1f3f5;
+}
+
+.MyDialogWideningClass
+{
+    --bs-modal-width: 1000px;
+}
+
+
+.modal-xlg1{
+            max-width: 100%;
+            min-width: 400px;
+            margin: auto;
+            
+ }
+
+
+
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  background: #f1f3f5;
+  border-left: 1px solid darken(#f1f3f5, 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: darken(#f1f3f5, 20%);
+}
+
+
+
+h1 {
+    color: #060000;
+    font-family: "Nirmala UI", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 35pt;
+}
+
+h2 {
+    color: #c00c90;
+    font-family: "Nirmala UI", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 26.5pt;
+    
+    
+}
+.img_animation { 
+background-color: #ffffff;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s; 
+
+}
+
+@keyframes example {
+  
+  0%  {background-color:yellow; left:0px; top:0px;}
+  50%  {background-color:white; left:0px; top:200px;}
+ 
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+  /* Add animation to flip card */
+  animation: flip 10s infinite;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Define the keyframe animation */
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+     tr {
+      opacity: 0;
+      
+      animation: drop 2s forwards;
+    }
+    @keyframes drop {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+      
+
+    </style>
+
+   <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&amp;display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&amp;display=swap">
+</head>
+<body style="width:100%">
+   
+ 
+  
+    <form method="post" action="#" id="form1" style="padding-bottom: 100px;background-color: white;padding-top: 10px;">
+ 
+    <div style="text-align:center;font-family: Akshar, sans-serif; font-size:4vw; margin-top:10px">  
+   <h2 style="text-indent: 0pt;line-height: 40pt;text-align: center;">222 शेवगाव पाथर्डी विधानसभा सार्वत्रिक निवडणूक 2024</h2>  
+    <h1 style="padding-left: 17pt;text-indent: 0pt;line-height: 35pt;text-align: center;">    
+डमी मतदान यंत्र </h1>
+    
+
+    </div>
+    <div style="width:100%;">
+    <div class="buttonIntro" style="width:80% !important; text-align:center; margin:0 auto; margin-bottom:20px;font-family: Akshar, sans-serif; font-size:3vw">डेमो मतदानासाठी ऑटो रिक्षा निशाणी समोरील निळे बटण दाबावे</div>
+        </div>
+        <div style="width:100%;margin-top: 20px;">
+            <div style=" text-align:center; margin:0 auto; font-family: Akshar, sans-serif; font-size:40px;color:#000000">
+                
+          मतदानाच्या
+ दिवशी
+ सुद्धा
+“<strong>ऑटो रिक्षा</strong>”
+ या
+ चिन्हासमोरील
+ बटन 
+ दाबून<br>
+“<strong> काकडे हर्षदा विद्याधर </strong>” यांना
+ 
+ प्रचंड मतांनी विजयी करा !
+                </div>
+                <center>
+            <span style="padding: 10px; color: #ffffff;font-weight: bold;font-size:4vw;display: inline-block;border-radius: 10px;"></span>  <img class="wimage" src="https://drive.google.com/thumbnail?id=1D2gYdluEPSJojtxfDOFIs1_w0OLSkVeY&sz=w1000" style="/* vertical-align:middle; */padding-left:20px;padding-top: 1vw;">
+                <img id="simage">
+
+                </center>
+                
+            </div>
+           
+            <div style="height: 130px;
+    color: black;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    font-size: xx-large;text-align: center;;background-color:#ff6634;color: #ffffff">
+            <strong>“ऑटो रिक्षा”</strong> या चिन्हासमोरील बटन दाबून प्रचंड मतांनी विजयी करा.<br>  मतदान दिनांक २० नोव्हेंबर २०२४ स. ०७:०० ते  सायं.  ०६:०० </div>
+    
+    
+    
+  
+
+    
+    
+    
+    
+    
+    
+      <div class="modal" tabindex="-1" id="myModal1" style="display:none">
+  <div class="modal-dialog modal-xlg1">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">222 शेवगाव पाथर्डी विधानसभा सार्वत्रिक निवडणूक 2024</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="FONT-SIZE: xxx-large;"></button>
+      </div>
+      
+      
+      
+      <div class="modal-body w-100 text-center img_animation">
+            
+       
+		<b style="position: fixed;
+    margin-top: 277px;
+    margin-left: 240px;
+    max-width: 15ch;
+    text-wrap-style: balance;">काकडे हर्षदा विद्याधर</b>
+		<b style="position: fixed;
+    margin-top: 330px;
+    margin-left: 230px;
+    font-size: 60px;">7</b>
+		<img class="blink"  src="http://getdrawings.com/img2/auto-rickshaw-drawing-19.jpg" style="    width: 80px;
+    position: fixed;
+    margin-top: 340px;
+    margin-left: 290px;" >
+		 <img   src="https://drive.google.com/thumbnail?id=1I3iIJ_0P7KBWZaEABHSxDVtTXxIRKcG_&sz=w1000"  style="width: 600px;" >
+          
+       
+        
+       
+       
+    <center>
+            <span style="padding: 10px; color: #ffffff;font-weight: bold;font-size:4vw;display: inline-block;border-radius: 10px;"></span>  <img class="wimage" src="https://drive.google.com/thumbnail?id=1D2gYdluEPSJojtxfDOFIs1_w0OLSkVeY&sz=w1000" style="/* vertical-align:middle; */padding-left:20px;padding-top: 1vw;position: relative;
+    z-index: 1;">
+                <img id="simage">
+
+                </center>
+    
+              
+    
+    
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <table style="margin:0 auto; width:98%; text-align:center; border-collapse: collapse; font-size:4vw;background-color: white;">
+        <tbody><tr>
+            <td style="border:2px solid #000000; padding:10px; ">
+                अ.क्र
+            </td>
+            <td colspan="2" style="border:2px solid #000000; padding:10px">
+                उमेदवाराचे नाव 
+            </td>
+            <td style="border:2px solid #000000; padding:10px">
+                चिन्ह 
+            </td>
+         
+            <td style="border:2px solid #000000; padding:10px; background-color: antiquewhite;">
+            बटन 
+            </td>
+        </tr>
+                   <tr>
+                    <td style="border:2px solid #000000;">
+                        १.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage1" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn1" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        २.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage2" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn2" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        ३.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage3" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn3" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        ४.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage4" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn4" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        ५.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage5" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn5" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        ६.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage6" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn6" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                <tr style="height:10vw; background-color:#ffffff;color: #000000;font-size: 4vw">
+                    <td style="border:2px solid #000000; font-size: 90px;">
+                        ७.
+                    </td>
+                    <td style="border:2px solid #000000;  font-weight:bold; ">
+                       काकडे हर्षदा विद्याधर<br><p style='font-size: xx-large;'></p>
+                    </td>
+                     <td style="border:2px solid #000000; 
+                       color: #ffffff;font-weight:bold;
+                       background-image: url('https://tse4.mm.bing.net/th?id=OIP.bXKdMCaSrHnk9dhDFdyUGgHaHa&pid=Api&P=0&h=220');  
+           
+          background-position: center; 
+          background-repeat: no-repeat; 
+          background-size: cover; width:10vw; height:10vw; "> 
+                      
+                    </td>
+                    <td style="border:2px solid #000000; 
+                       color: #ffffff;font-weight:bold;
+                       background-image: url('http://getdrawings.com/img2/auto-rickshaw-drawing-19.jpg');  
+          
+          background-position: center; 
+          background-repeat: no-repeat; 
+          background-size: cover; width:8vw; height:8vw;background-size: contain; background-color: white;"> 
+          
+                       
+                    </td>
+                
+                    <td style="border:2px solid #000000; background-color: antiquewhite; ">
+                      
+                        
+                        
+                        <div style="display: flex; align-items: center;">
+            <img id="errorimage8"  src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+              <div id="errorbtn8" class="errorbtn buttonCorrect" style="width:100% !important">बटण दाबा</div>
+        </div>
+        
+        
+                    </td> 
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        ८.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage7" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn7" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                               
+                                    <tr>
+                    <td style="border:2px solid #000000;">
+                        ९.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage9" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn9" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        १०.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage10" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn10" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        ११.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage11" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn11" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        १२.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage12" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn12" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        १३.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage13" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn13" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        १४.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage14" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn14" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        १५.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage15" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn15" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                                <tr>
+                    <td style="border:2px solid #000000;">
+                        १६.
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                     <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Name -->
+                    </td>
+                    <td style="border:2px solid #000000;">
+                        <!-- Empty cell for Election Symbol -->
+                    </td>
+                 
+                    <td style="border:2px solid #000000;background-color: antiquewhite;">
+                       <div style="display: flex; align-items: center;">
+    <img id="errorimage16" src="https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000" style="width:6vw;" style="width:6vw; margin-right: 10px;">
+    <div id="errorbtn16" class="errorbtn button" style="width:100% !important"></div>
+</div>
+
+                    </td>
+                </tr>
+                    </tbody></table>
+   <center>  <a href='http://www.freevisitorcounters.com'>Views</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=690816eb72c8d6fa982f5811cd407dd77bd897c0'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1262787/t/6"></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1259601/t/5"></script></center>
+  </form>
+
+<style>
+     
+     footer {
+         font-family: Akshar, sans-serif;
+             font-size: 30px;
+ position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center; 
+  background-color: #ffffff; 
+  height: 80px;
+  border-top: solid 1px;
+  border-color: #0000ff1c;
+  padding: 10px;
+  z-index: 9; /* Default for smaller screens */
+}
+
+/* Apply this rule for desktop screens (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+  footer {
+    z-index: 999; /* Higher z-index for desktop */
+  }
+}
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+ </style>
+ <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="row">
+                    <div class="col-5">
+                    <div class="float-start">
+                        <p>2024 &copy; <a href="https://www.janshaktitextile.com">जनशक्ती विकास आघाडी</a></p>
+                    </div>
+                    </div>
+                    <div class="col-7">
+                    <div class="float-end">
+                        <p>Created by SVS <a href='tel:+9108045811706'>+91 08045811706</a></p>                    </div>
+                    </div>
+                    </div>
+                </div>
+            </footer>
+            
+     <script src="js/6730-inc-jquery-1.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+             var intro = new Audio('inc/demo_chandrashekharghule.mp3');
+            var error = new Audio('inc/error.mp3');
+            var correct = new Audio('inc/correct_new.mp3');
+            var last = new Audio('inc/last_chandrashekharghule22.mp3');
+
+ 
+
+            $(".buttonIntro1").mousedown(function () {
+                intro.load();
+                intro.play();
+            
+            
+            var timer = setTimeout(function () {
+
+                  $('#myModal').modal('hide');
+
+                }, 9000);
+            
+           
+            
+            
+            
+            });
+
+
+
+
+
+
+            $(".buttonIntro").mousedown(function () {
+                intro.load();
+                intro.play();
+            
+            
+            var timer = setTimeout(function () {
+
+                  $('#myModal').modal('hide');
+
+                }, 9000);
+            
+           
+            
+            
+            
+            });
+            $(".buttonIntro").mouseup(function () {
+                intro.load();
+                intro.play();
+            
+            var timer = setTimeout(function () {
+
+                  $('#myModal').modal('hide');
+
+                }, 9000);
+            
+           
+            
+            });
+
+            $(".button").mousedown(function () {
+                error.load();
+                error.play();
+            });
+
+            $(".button").mouseup(function () {
+                error.load();
+                error.play();
+            });
+
+            $(".buttonCorrect").mousedown(function () {
+                correct.load();
+                correct.play();
+          
+
+            });
+
+            $(".buttonCorrect").mouseup(function () {
+                correct.load();
+                correct.play();
+                var timer = setTimeout(function () {
+
+                    last.load();
+                    last.play();
+
+
+
+                }, 1000);
+            
+            
+            
+             var timer = setTimeout(function () {
+            
+            $('#myModal1').modal('show');
+             }, 1000);
+            
+            });
+
+                // Delegated click event for all error buttons
+        $(document).on('click', '.errorbtn', function () {
+            var btnId = $(this).attr('id'); // Get the ID of the clicked button
+            var imageId = "#errorimage" + btnId.replace('errorbtn', ''); // Generate the corresponding image ID
+            var image = $(imageId); // Select the image element
+
+            // Change the image source to the red bulb
+            image.attr("src", "https://drive.google.com/thumbnail?id=1lxJBEiV-HNCTQVMe93LqkT4E4a-2zdtQ&sz=w1000");
+
+            // Reset the image back to the original bulb after 2 seconds
+            setTimeout(function () {
+                image.attr("src", "https://drive.google.com/thumbnail?id=1xrvrDmR0JHtOc2UtY_M98CTvLuusOF0g&sz=w1000");  
+            }, 2000);
+        });
+        });
+    </script>
+    
+    
+    <script>
+        $(".wimage").click(function () {
+            var fakeLink = document.createElement('a');
+            //fakeLink.setAttribute('href', 'whatsapp://send?text=' + encodeURIComponent(imageURL));
+            fakeLink.setAttribute('href', 'https://api.whatsapp.com:/send?text=' + encodeURIComponent(window.location.href) + '%0D%0Aमी डेमो मतदान केले, तुम्ही केले का?');
+            fakeLink.setAttribute('data-action', 'share/whatsapp/share');
+            fakeLink.click();
+            image.src = "";
+            //button.setAttribute('href', 'whatsapp://send?text=' + encodeURIComponent(imageURL));
+        });
+    </script>
+    
+    
+    
+    
+    <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>
+    
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const rows = document.querySelectorAll("tbody tr");
+      rows.forEach((row, index) => {
+        row.style.animationDelay = `${index * 0.1}s`; // Add staggered animation
+      });
+    });
+  </script>
+    
+    
+    
+
+</body></html>
